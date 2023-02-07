@@ -16,7 +16,7 @@ class Browser{
 			Browser.history.add(urls.get(i));
 		}
 	}
-	public void accessBrowser() {		//displaying visited url
+	public void accessBrowser() {		//displaying the browser history
 		for(int i = 0; i<history.size(); i++) {
 			System.out.println("[history[" + (i+1) +"]:" + history.get(i));
 		}
