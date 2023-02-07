@@ -2,7 +2,7 @@ package com.rohitha;
 import java.util.*;
 
 class Browser{
-	private static ArrayList<String> history = new ArrayList<String>();
+	private static ArrayList<String> history = new ArrayList<>();
 	
 	public Browser() {	//empty constructor
 	} 
@@ -31,7 +31,7 @@ public class Learning {
 		Browser b1 = new Browser();
 		String url = "https://www.google.com";
 		b1.setBrowser(url);
-		ArrayList<String> urlArray = new ArrayList<String>();
+		ArrayList<String> urlArray = new ArrayList<>();
 		urlArray.add("https://www.facebook.com");
 		urlArray.add("https://www.web.whatsapp.com");
 		Browser b2 = new Browser(urlArray);
