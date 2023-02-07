@@ -2,7 +2,7 @@ package com.rohitha;
 
 import java.util.*;
 
-public class Task1 {
+public class Trial {
 
 		public static void main(String[] args) {
 			//Mortgage Calculator
