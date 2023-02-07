@@ -8,12 +8,12 @@ class Browser{
 	} 
 	
 	public void setBrowser(String history) {	//adding new visited url
-		this.history.add(history);
+		Browser.history.add(history);
 	}
 	
 	public Browser(ArrayList<String> urls) {		//constructor with parameter
 		for(int i=0; i< urls.size(); i++) {
-			this.history.add(urls.get(i));
+			Browser.history.add(urls.get(i));
 		}
 	}
 	public void accessBrowser() {		//displaying visited url
