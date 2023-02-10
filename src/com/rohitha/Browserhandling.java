@@ -72,7 +72,7 @@ public class Browserhandling {
 			System.out.println("2. Display history");
 			System.out.print("Enter your choice: ");
 			choice = scanner.nextInt();
-			switch(ch) {
+			switch(choice) {
 				case 1: System.out.print("\nEnter the browser: ");
 						browserChoice = scanner.next();
 						System.out.print("\nEnter the url: ");
@@ -104,6 +104,7 @@ public class Browserhandling {
 			
 		}while(ch == 'y');
 		System.out.println("Adios.......");
+		scanner.close();
 	}
 
 }
