@@ -96,6 +96,7 @@ public class Browserhandling {
 							browserHistory = Arrays.copyOf(chrome.accessHistory(), 10);
 							System.out.println("\n" + browserHistory);
 						}
+						break;
 				default: System.out.println("Wrong Choice!!");
 
 			}
