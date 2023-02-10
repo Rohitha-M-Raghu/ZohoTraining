@@ -34,10 +34,8 @@ class Browser{
 		}
 	}
 	
-	public void accessBrowser() {	//to display all the browser history
-		for(int i=0; i<Browser.historyIndex; ++i) {
-			System.out.println("[history[" + (i+1) +"]:" + Browser.history[i]);
-		}
+	public String[] accessBrowser() {	//to display all the browser history
+		return history;
 	}
 	private static void growSize() {	//to increase the array size upon exception
 		String[] temp = null;
@@ -47,6 +45,9 @@ class Browser{
 		}
 		Browser.history = temp;
 		
+	}
+	public static int accessIndex() {
+		return historyIndex;
 	}
 }
 
@@ -59,7 +60,11 @@ public class Dynamic {
 		b1.setBrowser(url);
 		String[] urlArray = new String[] {"https://www.facebook.com", "https://www.web.whatsapp.com"}; 
 		Browser b2 = new Browser(urlArray);
-		b2.accessBrowser();	
+		String[] search = new String[Browser.accessIndex()];
+		search = b2.accessBrowser();
+		for(int i=0;i<Browser.accessIndex(); ++i) {
+			System.out.println("[history[" + (i+1) +"]:" + search[i]);
+		}
 
 	}
 
